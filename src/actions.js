@@ -1,7 +1,7 @@
 //action creator
 const inc = () => ({ type: 'INC' })
 const dec = () => ({ type: 'DEC' })
-const rnd = (payload) => ({ type: 'INC_RANDOM', payload })
+const rnd = (payload) => ({ type: 'RND', payload })
 
 export {
   inc,
