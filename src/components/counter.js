@@ -29,18 +29,7 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-
-  const { inc, dec, rnd } = bindActionCreators(actions, dispatch)
-
-  return {
-    inc,
-    dec,
-    rnd: () => rnd(Math.floor(Math.random() * 10 + 1))
-  }
-}
-
 export default connect(
                   mapStateToProps,
-                  mapDispatchToProps
+                  actions
                )(Counter)
